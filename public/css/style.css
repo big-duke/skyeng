@@ -1,0 +1,269 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v25-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/montserrat-v25-latin_cyrillic-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-600 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  src: local(""),
+    url("../fonts/montserrat-v25-latin_cyrillic-600.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v25-latin_cyrillic-600.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-left: 120px;
+  margin-right: 120px;
+}
+
+.wrapper {
+  margin: 0 auto;
+}
+
+.header {
+  background-color: #cccccc;
+  width: 100%;
+}
+
+.header__wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__title {
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 44px;
+  color: #ffffff;
+}
+
+.header__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.header__item {
+  margin-right: 32px;
+}
+
+.header__item:last-child {
+  margin-right: 0px;
+}
+
+.header__link {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.sort__wrapper {
+  margin-top: 32px;
+  display: flex;
+  justify-content: end;
+}
+
+.sort__box {
+  border: 1px solid #c4c4c4;
+  border-radius: 16px;
+  padding: 10px;
+  min-width: 288px;
+}
+
+.sort {
+  appearance: none;
+  overflow: hidden;
+  width: 100%;
+  border: none;
+
+  outline: none;
+  scroll-behavior: smooth;
+
+  background: url("../img/arrow.svg") right no-repeat;
+  background-size: 20px;
+
+  font-size: 16px;
+}
+
+.catalog {
+  margin-top: 35px;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 68px;
+  row-gap: 48px;
+}
+
+.card__thumb {
+  width: 380px;
+  height: 250px;
+}
+
+h2.card__title {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card__description {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.card__price {
+  margin-top: 12px;
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.card__pic {
+  position: relative;
+}
+
+.card__pic-btns-wrapper {
+  display: none;
+}
+
+.card__pic:hover > .card__pic-btns-wrapper {
+  display: block;
+}
+
+.card__pic-btns {
+  position: absolute;
+  width: 100%;
+  display: flex;
+  justify-content: right;
+  padding-top: 12px;
+  padding-right: 12px;
+}
+
+.card__pic-btns > img {
+  margin-left: 23px;
+  cursor: pointer;
+}
+
+.cart__wrapper {
+  margin-top: 32px;
+  max-width: 786px;
+  display: flex;
+  flex-direction: column;
+  gap:30px;
+}
+
+.cart__header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; 
+}
+.cart__header  hr {
+  width: 100%;
+  border: none;
+  height: 0.5px;
+  background-color: #cacdd8; 
+}
+
+.cart__item {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  column-gap: 32px;
+}
+
+.cart__item  +  hr {
+  width: 100%;
+  border: none;
+  height: 0.5px;
+  background-color: #cacdd8; 
+  /* margin-top: 30px;
+  margin-bottom: 30px; */
+}
+
+
+.cart__item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cart__item-title {
+  font-size: 24px;
+  font-weight: 500;
+}
+.cart__item-pic > img {
+  width: 173px;
+  height: 173px;
+}
+.cart__item-description {
+  font-size: 14px;
+  color: #888888;
+}
+
+.cart__item-price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cart__item-link-wrapper {
+  display: flex;
+  gap: 30px;
+}
+
+.cart__item-link {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #000;
+}
+.cart__item-counter {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 30px;
+  color: #000;
+  padding: 16px;
+  background-color: #f7f6f6;
+  border: none;
+  border-radius: 6px;
+  text-align:center;
+}
+
+.cart__item-counter:focus {
+  outline-width: 0;
+}
