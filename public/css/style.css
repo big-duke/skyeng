@@ -156,6 +156,7 @@ h2.card__title {
 
 .card__pic {
   position: relative;
+  max-width: 380px;
 }
 
 .card__pic-btns-wrapper {
