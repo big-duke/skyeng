@@ -186,19 +186,20 @@ h2.card__title {
   max-width: 786px;
   display: flex;
   flex-direction: column;
-  gap:30px;
+  gap: 30px;
+  float: left;
 }
 
 .cart__header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between; 
+  justify-content: space-between;
 }
-.cart__header  hr {
+.cart__header hr {
   width: 100%;
   border: none;
   height: 0.5px;
-  background-color: #cacdd8; 
+  background-color: #cacdd8;
 }
 
 .cart__item {
@@ -207,15 +208,14 @@ h2.card__title {
   column-gap: 32px;
 }
 
-.cart__item  +  hr {
+.cart__item + hr {
   width: 100%;
   border: none;
   height: 0.5px;
-  background-color: #cacdd8; 
+  background-color: #cacdd8;
   /* margin-top: 30px;
   margin-bottom: 30px; */
 }
-
 
 .cart__item-info {
   display: flex;
@@ -262,9 +262,92 @@ h2.card__title {
   background-color: #f7f6f6;
   border: none;
   border-radius: 6px;
-  text-align:center;
+  text-align: center;
 }
 
 .cart__item-counter:focus {
   outline-width: 0;
+}
+
+.cart__buttons_wrapper {
+  margin-top: 20px;
+}
+.cart__btn {
+  width: 200px;
+  height: 37px;
+  border-radius: 50px;
+  border: 1px solid #000000;
+
+  font-weight: 400;
+  font-size: 14px;
+  color: #020202;
+  background-color: #ffffff;
+  margin-right: 8px;
+}
+
+.cart__btn-invert {
+  color: #ffffff;
+  background-color: #000000;
+}
+
+.order__wrapper {
+  float: right;
+  width: 379px;
+  height: 556px;
+  border-radius: 20px;
+  background-color: #f7f6f6;
+  margin-top: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.order__header {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  text-align: center;
+  margin-top: 42px;
+}
+.order__form {
+  margin-left: 27px;
+  margin-right: 64px;
+  margin-top: 35px;
+  display: flex;
+  flex-direction: column;
+}
+
+input[type="text"],
+input[type="tel"] {
+  width: 100%;
+  margin-bottom: 40px;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #f7f6f6;
+  border-width: 0 0 1px;
+  border-color: #cacdd8;
+}
+
+input[type="text"]:last-of-type,
+input[type="tel"]:last-of-type {
+  margin-bottom: 0px;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus {
+  border-width: 0 0 1px 0px;
+  outline: 0;
+}
+
+.order__total {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 29px;
+  letter-spacing: 0px;
+  text-align: center;
+  margin-top: 64px;
+}
+
+.cart__checkout-wrapper{
+  margin-top: 18px;
+  text-align: center;
 }
