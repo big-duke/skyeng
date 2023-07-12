@@ -347,7 +347,26 @@ input[type="tel"]:focus {
   margin-top: 64px;
 }
 
-.cart__checkout-wrapper{
+.cart__checkout-wrapper {
   margin-top: 18px;
   text-align: center;
+}
+
+@media screen and (max-width: 900px) {
+  .order__wrapper {
+    float: left;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .order__wrapper {
+    float: left;
+  }
+
+  .cart__item-pic {
+    display: none;
+  }
+
+  .cart__btn {
+    width: 166px;}
 }
